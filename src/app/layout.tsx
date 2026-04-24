@@ -24,12 +24,12 @@ const display = Space_Grotesk({
 export const metadata: Metadata = {
   title: "RAW SYSTEM — Software cru. Sistemas de verdade.",
   description:
-    "Construímos software sob medida, SaaS de ponta a ponta e plataformas web para pessoas e empresas que querem operar como sistema, não como gambiarra.",
+    "Sites, lojas virtuais, sistemas internos e aplicativos feitos do zero para a sua empresa. Sem template pronto, sem enrolação.",
   metadataBase: new URL("https://raw-system.vercel.app"),
   openGraph: {
     title: "RAW SYSTEM — Software cru. Sistemas de verdade.",
     description:
-      "Software sob medida, SaaS e plataformas web para empresas que operam como sistema.",
+      "Sites, lojas virtuais, sistemas internos e aplicativos feitos do zero para a sua empresa.",
     type: "website",
     locale: "pt_BR",
   },

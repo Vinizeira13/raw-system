@@ -11,22 +11,22 @@ type Project = {
 const PROJECTS: Project[] = [
   {
     index: "01",
-    name: "Pokemon-like multiplayer",
-    meta: "Game · Realtime · 2026",
-    line: "Servidor de combate em tempo real (Colyseus), deploy multi-região, client React + Phaser.",
+    name: "Jogo multiplayer",
+    meta: "Jogo online · 2026",
+    line: "Jogo de batalha em tempo real estilo Pokémon, com servidores em duas regiões para o jogador não sentir travamento.",
   },
   {
     index: "02",
     name: "11 Of",
-    meta: "Ecommerce · Copa 2026",
-    line: "Loja de jerseys com checkout PIX-only via pague.dev. Sem Shopify.",
+    meta: "Loja virtual · Copa 2026",
+    line: "Loja de camisas oficiais com pagamento direto no PIX. Sem comissão de plataforma — o dinheiro cai na conta do dono.",
     href: "https://loja-theta-plum.vercel.app",
   },
   {
     index: "03",
     name: "Rua Escura",
-    meta: "Brand · Pipeline AI · 2026",
-    line: "Caixa de celebridades BR com pipeline de imagem (Gemini 3 Pro) e vídeo (Veo 3.1).",
+    meta: "Marca digital · 2026",
+    line: "Caixa de celebridades brasileiras com fotos e vídeos gerados por inteligência artificial — visual novo a cada lançamento.",
     href: "https://rua-escura.vercel.app",
   },
 ];
@@ -40,16 +40,16 @@ export function Lab() {
       <div className="mx-auto max-w-[1400px] px-5 md:px-8">
         <header className="mb-12 md:mb-14 grid gap-6 md:grid-cols-12 items-end">
           <div className="md:col-span-7">
-            <div className="raw-eyebrow mb-4">[04] / lab</div>
+            <div className="raw-eyebrow mb-4">[04] / trabalhos</div>
             <h2 className="raw-display text-[clamp(2.2rem,6vw,4.5rem)] text-balance">
-              Em produção.
+              No ar.
               <br />
-              <span className="text-[var(--raw-fg-dim)]">Não em slide.</span>
+              <span className="text-[var(--raw-fg-dim)]">Não em apresentação.</span>
             </h2>
           </div>
           <p className="md:col-span-5 text-[var(--raw-fg-dim)] text-base leading-relaxed">
-            Recortes de produtos próprios e de clientes. Tudo aqui está rodando
-            com usuários e custos de infra reais.
+            Recortes de coisas que estamos rodando agora — com gente usando
+            todo dia e contas de verdade pra pagar.
           </p>
         </header>
 

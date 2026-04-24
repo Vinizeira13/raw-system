@@ -3,21 +3,20 @@ import { RawSystemMark } from "@/components/raw/raw-system-mark";
 import { Spotlight } from "@/components/ui/spotlight";
 
 const MARQUEE = [
-  "next.js",
-  "react 19",
-  "typescript",
-  "supabase",
-  "postgres",
-  "vercel",
-  "fly.io",
-  "claude",
-  "gpt-5",
-  "gemini",
-  "stripe",
-  "pague.dev",
-  "drizzle",
-  "redis",
-  "playwright",
+  "site profissional",
+  "loja virtual",
+  "pagamento por pix",
+  "sistema interno",
+  "controle de estoque",
+  "agendamento online",
+  "integração com whatsapp",
+  "automação",
+  "relatórios automáticos",
+  "inteligência artificial",
+  "aplicativo próprio",
+  "painel administrativo",
+  "cadastro de clientes",
+  "emissão de nota",
 ];
 
 export function Hero() {
@@ -49,8 +48,9 @@ export function Hero() {
         </h1>
 
         <p className="mt-7 max-w-xl text-pretty text-base md:text-lg leading-relaxed text-[var(--raw-fg-dim)]">
-          Construímos software sob medida, SaaS e plataformas web para empresas
-          e pessoas que querem operar como sistema — não como improviso.
+          A gente constrói o sistema que sua empresa precisa — site, loja
+          virtual, aplicativo ou ferramenta interna — feito do zero, do seu
+          jeito, sem template pronto.
         </p>
 
         <div className="mt-9 flex flex-col sm:flex-row items-center gap-3">

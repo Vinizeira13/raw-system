@@ -16,26 +16,26 @@ type Service = {
 const SERVICES: Service[] = [
   {
     index: "01",
-    title: "Software sob medida",
-    line: "Sistemas internos, ERPs leves e ferramentas que substituem planilha, WhatsApp e PDF na sua empresa.",
-    icon: <IconBuildingFactory2 className="h-5 w-5" stroke={1.4} />,
-  },
-  {
-    index: "02",
-    title: "SaaS de ponta a ponta",
-    line: "Produto digital completo: arquitetura, billing, multi-tenant e infra escalável.",
-    icon: <IconRocket className="h-5 w-5" stroke={1.4} />,
-  },
-  {
-    index: "03",
-    title: "Sites & plataformas",
-    line: "Landing pages, ecommerce e portais que carregam rápido e vendem.",
+    title: "Site & loja virtual",
+    line: "Site institucional, página de vendas, loja com pagamento no PIX e cartão. Carregamento rápido e aparência profissional.",
     icon: <IconDeviceDesktopAnalytics className="h-5 w-5" stroke={1.4} />,
   },
   {
+    index: "02",
+    title: "Sistema interno",
+    line: "A ferramenta que sua empresa usa por dentro: cadastro de cliente, controle de estoque, agendamento, relatório. Substitui planilha, WhatsApp e papel.",
+    icon: <IconBuildingFactory2 className="h-5 w-5" stroke={1.4} />,
+  },
+  {
+    index: "03",
+    title: "Aplicativo próprio",
+    line: "Seu próprio aplicativo (web ou celular) para você cobrar mensalidade do seu cliente. Cadastro, pagamento e painel já incluídos.",
+    icon: <IconRocket className="h-5 w-5" stroke={1.4} />,
+  },
+  {
     index: "04",
-    title: "AI & automação",
-    line: "Agentes e copilotos internos que executam — não chatbot de demo.",
+    title: "Inteligência artificial",
+    line: "IA que faz trabalho de verdade na sua empresa: responder cliente no WhatsApp, gerar relatório, analisar contrato. Não é chatbot de demonstração.",
     icon: <IconCpu className="h-5 w-5" stroke={1.4} />,
   },
 ];
@@ -49,7 +49,7 @@ export function Services() {
       <div className="mx-auto max-w-[1400px] px-5 md:px-8">
         <header className="mb-12 md:mb-14 grid gap-6 md:grid-cols-12 items-end">
           <div className="md:col-span-7">
-            <div className="raw-eyebrow mb-4">[02] / serviços</div>
+            <div className="raw-eyebrow mb-4">[02] / o que fazemos</div>
             <h2 className="raw-display text-[clamp(2.2rem,6vw,4.5rem)] text-balance">
               Quatro frentes.
               <br />
@@ -57,8 +57,8 @@ export function Services() {
             </h2>
           </div>
           <p className="md:col-span-5 text-[var(--raw-fg-dim)] text-base leading-relaxed">
-            Software que funciona em produção, com código que outro
-            desenvolvedor consegue ler depois.
+            Sistema que funciona em produção todo dia — e não vira dor de
+            cabeça três meses depois.
           </p>
         </header>
 

@@ -35,8 +35,9 @@ export function Contact() {
             </h2>
           </div>
           <p className="md:col-span-5 text-[var(--raw-fg-dim)] text-base leading-relaxed">
-            Conta o que você precisa em duas linhas. Em até 48h volto com
-            diagnóstico, prazo e custo realista — sem proposta de 80 slides.
+            Conta em duas linhas o que você precisa. Em até 48 horas a gente
+            volta com uma resposta direta — quanto custa, quanto demora e se
+            faz sentido. Sem enrolação.
           </p>
         </header>
 
@@ -77,7 +78,8 @@ export function Contact() {
             <div>
               <div className="raw-eyebrow mb-3">direto</div>
               <p className="text-sm text-[var(--raw-fg-dim)] leading-relaxed mb-6">
-                Sem CRM no meio. Quem responde é quem vai construir.
+                Sem cadastro chato no meio. Quem responde é quem vai construir
+                o seu sistema.
               </p>
               <ul className="space-y-px bg-[var(--raw-line)] border border-[var(--raw-line)]">
                 <ChannelLink label="Email" value="contato@rawsystem.dev" href="mailto:contato@rawsystem.dev" />
@@ -85,7 +87,7 @@ export function Contact() {
               </ul>
             </div>
             <div className="raw-eyebrow text-[var(--raw-fg-mute)]">
-              call de 30min · sem custo
+              30 minutos · sem custo
             </div>
           </aside>
         </div>

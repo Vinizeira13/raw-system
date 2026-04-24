@@ -1,23 +1,23 @@
 const STEPS = [
   {
     n: "01",
-    title: "Diagnóstico",
-    line: "Call técnica de 30min. Mapeamos problema real, orçamento e o que já existe — antes de uma linha de código.",
+    title: "Conversa",
+    line: "Uma call de 30 minutos, sem custo. A gente entende o que você precisa, o que já tem e quanto pode investir — antes de qualquer proposta.",
   },
   {
     n: "02",
-    title: "Build",
-    line: "Sprints curtas com deploy semanal em ambiente real. Você vê o produto crescendo, não slide.",
+    title: "Construção",
+    line: "Construímos o seu sistema em pedaços, e a cada semana você vê o que ficou pronto funcionando de verdade. Nada de slide ou desenho — produto rodando.",
   },
   {
     n: "03",
     title: "Entrega",
-    line: "Código no seu GitHub, infra na sua conta, runbook documentado. Nada fica refém da gente.",
+    line: "O sistema fica seu — não nosso. A gente entrega manual de uso, treina seu time e passa todos os acessos. Você não fica refém da gente.",
   },
   {
     n: "04",
-    title: "Evolução",
-    line: "Opcional: mensalidade fixa para evolução contínua, plantão de bug e novas features.",
+    title: "Acompanhamento",
+    line: "Se quiser, mensalidade fixa para a gente cuidar de bug, dar manutenção e adicionar coisa nova. Se não quiser, segue sozinho — sem rancor.",
   },
 ];
 
@@ -30,7 +30,7 @@ export function Process() {
       <div className="mx-auto max-w-[1400px] px-5 md:px-8">
         <header className="mb-12 md:mb-14 grid gap-6 md:grid-cols-12 items-end">
           <div className="md:col-span-7">
-            <div className="raw-eyebrow mb-4">[03] / processo</div>
+            <div className="raw-eyebrow mb-4">[03] / como trabalhamos</div>
             <h2 className="raw-display text-[clamp(2.2rem,6vw,4.5rem)] text-balance">
               Quatro passos.
               <br />
@@ -38,8 +38,8 @@ export function Process() {
             </h2>
           </div>
           <p className="md:col-span-5 text-[var(--raw-fg-dim)] text-base leading-relaxed">
-            Engenharia, não hype. Cada fase entrega um artefato auditável — e
-            você pode parar a qualquer momento.
+            A gente trabalha de cara limpa. Você sabe o que cada etapa entrega
+            e pode parar quando quiser, sem multa.
           </p>
         </header>
 
