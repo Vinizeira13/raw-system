@@ -1,133 +1,77 @@
-"use client";
-
-import { Timeline } from "@/components/ui/timeline";
+const STEPS = [
+  {
+    n: "01",
+    title: "Diagnóstico",
+    line: "Call técnica de 30min. Mapeamos problema real, orçamento e o que já existe — antes de uma linha de código.",
+  },
+  {
+    n: "02",
+    title: "Build",
+    line: "Sprints curtas com deploy semanal em ambiente real. Você vê o produto crescendo, não slide.",
+  },
+  {
+    n: "03",
+    title: "Entrega",
+    line: "Código no seu GitHub, infra na sua conta, runbook documentado. Nada fica refém da gente.",
+  },
+  {
+    n: "04",
+    title: "Evolução",
+    line: "Opcional: mensalidade fixa para evolução contínua, plantão de bug e novas features.",
+  },
+];
 
 export function Process() {
-  const data = [
-    {
-      title: "01",
-      content: (
-        <ProcessStep
-          step="Diagnóstico"
-          summary="A primeira call é técnica. Mapeamos o problema real, o orçamento e o que já existe — antes de propor qualquer linha de código."
-          out={[
-            "Escopo escrito em 1 página",
-            "Estimativa de prazo e custo",
-            "Decisão go / no-go honesta",
-          ]}
-        />
-      ),
-    },
-    {
-      title: "02",
-      content: (
-        <ProcessStep
-          step="Arquitetura"
-          summary="Desenhamos o sistema antes de codar. Stack, banco, integrações, hospedagem, custos mensais — tudo documentado."
-          out={[
-            "Diagrama de arquitetura",
-            "Schema do banco e contratos de API",
-            "Plano de infra e custos",
-          ]}
-        />
-      ),
-    },
-    {
-      title: "03",
-      content: (
-        <ProcessStep
-          step="Build"
-          summary="Sprints curtas, deploy semanal em ambiente real. Você vê o produto crescendo de verdade, não slide nem mockup."
-          out={[
-            "Preview deploy a cada PR",
-            "Demo semanal com você",
-            "Backlog priorizado em conjunto",
-          ]}
-        />
-      ),
-    },
-    {
-      title: "04",
-      content: (
-        <ProcessStep
-          step="Entrega"
-          summary="Handover real: código documentado, ambientes provisionados, credenciais transferidas. Nada fica refém da gente."
-          out={[
-            "Repositório no seu GitHub",
-            "Infra na sua conta (Vercel / Fly / AWS)",
-            "Runbook de operação",
-          ]}
-        />
-      ),
-    },
-    {
-      title: "05",
-      content: (
-        <ProcessStep
-          step="Evolução"
-          summary="Opcional: mensalidade fixa para evolução contínua, plantão de bug e novas features sob demanda."
-          out={[
-            "SLA combinado por escrito",
-            "Roadmap revisitado mês a mês",
-            "Sem efeito 'agência sumiu'",
-          ]}
-        />
-      ),
-    },
-  ];
-
   return (
     <section
       id="processo"
-      className="relative border-b border-[var(--raw-line)] bg-background"
+      className="relative border-b border-[var(--raw-line)] py-24 md:py-32"
     >
-      <div className="mx-auto max-w-[1400px] px-5 md:px-8 pt-24 md:pt-32 pb-4">
-        <div className="raw-eyebrow mb-4">[03] / processo</div>
-        <h2 className="raw-display text-[clamp(2.2rem,6vw,5rem)] text-balance max-w-4xl">
-          Cinco passos.
-          <br />
-          <span className="text-[var(--raw-fg-dim)]">
-            Zero surpresa no boleto.
-          </span>
-        </h2>
-        <p className="mt-6 max-w-2xl text-[var(--raw-fg-dim)] text-base md:text-lg leading-relaxed">
-          A gente trabalha como engenharia, não como hype. Cada fase entrega
-          um artefato concreto que você pode auditar — e parar a qualquer momento.
-        </p>
-      </div>
-      <div className="-mt-2">
-        <Timeline data={data} />
+      <div className="mx-auto max-w-[1400px] px-5 md:px-8">
+        <header className="mb-12 md:mb-14 grid gap-6 md:grid-cols-12 items-end">
+          <div className="md:col-span-7">
+            <div className="raw-eyebrow mb-4">[03] / processo</div>
+            <h2 className="raw-display text-[clamp(2.2rem,6vw,4.5rem)] text-balance">
+              Quatro passos.
+              <br />
+              <span className="text-[var(--raw-fg-dim)]">Sem surpresa.</span>
+            </h2>
+          </div>
+          <p className="md:col-span-5 text-[var(--raw-fg-dim)] text-base leading-relaxed">
+            Engenharia, não hype. Cada fase entrega um artefato auditável — e
+            você pode parar a qualquer momento.
+          </p>
+        </header>
+
+        <ol className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-px bg-[var(--raw-line)] border border-[var(--raw-line)]">
+          {STEPS.map((s, i) => (
+            <li
+              key={s.n}
+              className="group bg-background p-6 md:p-7 flex flex-col justify-between min-h-[14rem] hover:bg-[var(--raw-surface)] transition-colors"
+            >
+              <div className="flex items-center justify-between text-foreground">
+                <span className="raw-display text-4xl text-[var(--raw-fg-dim)] group-hover:text-foreground transition-colors">
+                  {s.n}
+                </span>
+                <span
+                  aria-hidden
+                  className="raw-eyebrow text-[var(--raw-fg-mute)]"
+                >
+                  {i === STEPS.length - 1 ? "fim" : "→"}
+                </span>
+              </div>
+              <div>
+                <h3 className="raw-display text-2xl mb-2 leading-tight">
+                  {s.title}
+                </h3>
+                <p className="text-sm text-[var(--raw-fg-dim)] leading-relaxed">
+                  {s.line}
+                </p>
+              </div>
+            </li>
+          ))}
+        </ol>
       </div>
     </section>
-  );
-}
-
-function ProcessStep({
-  step,
-  summary,
-  out,
-}: {
-  step: string;
-  summary: string;
-  out: string[];
-}) {
-  return (
-    <div className="border border-[var(--raw-line)] bg-[var(--raw-surface)] p-6 md:p-8">
-      <h3 className="raw-display text-2xl md:text-3xl mb-3 text-foreground">
-        {step}
-      </h3>
-      <p className="text-sm md:text-base text-[var(--raw-fg-dim)] leading-relaxed mb-5">
-        {summary}
-      </p>
-      <div className="raw-eyebrow mb-2">entregáveis</div>
-      <ul className="space-y-1.5 font-mono text-[11px] md:text-[12px] uppercase tracking-[0.12em] text-foreground">
-        {out.map((o) => (
-          <li key={o} className="flex gap-2">
-            <span className="text-[var(--raw-fg-mute)]">→</span>
-            <span>{o}</span>
-          </li>
-        ))}
-      </ul>
-    </div>
   );
 }

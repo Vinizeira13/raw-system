@@ -4,8 +4,7 @@ import { RawSystemWordmark } from "./raw-system-mark";
 const NAV = [
   { href: "#servicos", label: "Serviços" },
   { href: "#processo", label: "Processo" },
-  { href: "#stack", label: "Stack" },
-  { href: "#lab", label: "Lab" },
+  { href: "#lab", label: "Trabalhos" },
   { href: "#contato", label: "Contato" },
 ];
 
